@@ -1,0 +1,9 @@
+server:
+  port: 8082
+dubbo:
+  application:
+    name: dubbo-consumer
+    logger: slf4j
+    qos-port: 33333
+  registry:
+    address: nacos://${nacos.address:127.0.0.1}:8848
